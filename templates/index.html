@@ -61,38 +61,19 @@
                 </div>
                 <div class="col-md-4 mb-3">
                   <label id="labcity" for="city" class="form-label">City</label>
-                  <select name="city" id="city" class="form-select">
-                    <option value="">Select a City</option>
-                    <option value="Lagos">Lagos</option>
-                    <option value="Abbotsford">Abbotsford</option>
-                  </select>
+                  <input type="text" class="form-control" name="city" step="any">
                 </div>
                 <div class="col-md-4 mb-3">
                   <label id="labattraction" for="attraction" class="form-label">Attraction:</label>
-                  <select name="attraction" id="attraction" class="form-select">
-                    <option value="">Select a Attraction</option>
-                    <option value="Sacred Monkey Forest Sanctuary">Sacred Monkey Forest Sanctuary</option>
-                    <option value="Mount Semeru Volcano">Mount Semeru Volcano</option>
-                    <option value="Sanur Beach">Sanur Beach</option>
-                  </select>
+                  <input type="text" class="form-control" name="attraction" step="any">
                 </div>
                 <div class="col-md-4 mb-3">
                   <label id="labattractiontype" for="attractiontype" class="form-label">Attraction Type:</label>
-                  <select name="attractiontype" id="attractiontype" class="form-select">
-                    <option value="">Select a Attraction</option>
-                    <option value="Beaches">Beaches</option>
-                    <option value="Nature & Wildlife Areas">Nature & Wildlife Areas</option>
-                    <option value="Water Parks">Water Parks</option>
-                  </select>
+                  <input type="text" class="form-control" name="attractiontype" step="any">
                 </div>
                 <div class="col-md-4 mb-3">
                   <label id="labmode" for="mode" class="form-label">Visit Mode:</label>
-                  <select name="mode" id="mode" class="form-select">
-                    <option value="">Select a Type</option>
-                    <option value="Couples">Couples</option>
-                    <option value="Family">Family</option>
-                    <option value="Business">Business</option>
-                  </select>
+                  <input type="text" class="form-control" name="mode" step="any">
                 </div>
               </div>
               <button type="submit" class="btn btn-custom mt-3">Recommend</button>
@@ -104,13 +85,6 @@
               <h1 class="text-center text-danger">
                 Rating: <br>
                 {{pred_rating}}
-              </h1>
-            {% endif %}
-
-            {% if pred_visitmode %}
-              <h1 class="text-center text-danger">
-                Visit Mode: <br>
-                {{pred_visitmode}}
               </h1>
             {% endif %}
 
